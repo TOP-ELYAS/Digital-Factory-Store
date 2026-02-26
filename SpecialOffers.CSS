@@ -203,6 +203,12 @@
       width: 200px; 
     }
 
+    h1 img {
+        max-width: 100%;  
+        height: auto;       
+        width: auto;        
+    }
+
     .nav-menu {
       flex-direction: column;
       width: 100%;

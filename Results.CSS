@@ -1,30 +1,69 @@
-body {
- background-image: url(/web/img/Background2.jpg);
- background-size: 1370px;
-}
-.BTN {
- border-radius: 7px;
- font-size: large;
- border: none;
- background-color: rgb(4, 114, 218);
- padding: 6px 4px;
- cursor: pointer;
- color: white;
-}
-.BTN:hover {
- background-color: rgb(1, 79, 153);
- color: white;
-}
-.Sent {
- position: absolute;
- top: 50%;
- left: 50%;
- transform: translate(-50%,-50%);
- width: 350px;
- height: 420px;
- background: rgb(255, 255, 255);
- border-radius: 15px;
- box-sizing: border-box;
- border: solid 1px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    background-image: url(Img/Background2.png);
+    background-size: cover;
+    background-attachment: scroll;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Sent {
+    width: 90%;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    padding: 30px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.Sent img {
+    max-width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.Sent h1 {
+    font-size: 1.5rem;
+    color: #006391;
+    margin-bottom: 25px;
+}
+
+.BTN {
+    border-radius: 50px;
+    font-size: 1rem;
+    border: none;
+    background-color: #006391;
+    padding: 12px 30px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.BTN:hover {
+    background-color: #00388b;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .Sent {
+        padding: 20px 15px;
+    }
+    .Sent h1 {
+        font-size: 1.2rem;
+    }
+    .BTN {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
